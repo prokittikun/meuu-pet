@@ -1,9 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.noto-sans {
   font-family: "Noto Sans Thai", sans-serif;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+
+.login-bg {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../public/photo-1532601224476-15c79f2f7a51.avif") 0% 0%; */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* width: 100vw;
+  height: 100vh; */
+  background: url("/login-bg.avif") center center / cover no-repeat;
 }
